@@ -31,13 +31,13 @@ public class lift : MonoBehaviour
             if (topToBottomState)
             {
                 animator.SetTrigger("ElevatorTop2BottomTrigger");
-                print("ElevatorTopToBottomTrigger");
+                //print("ElevatorTopToBottomTrigger");
            
             }
             else
             {
                 animator.SetTrigger("ElevatorBotton2TopTrigger");
-                print("ElevatorBotton2TopTrigger");
+                //print("ElevatorBotton2TopTrigger");
             }
            
             vrPlayer.transform.parent = gameObject.transform;
@@ -48,7 +48,7 @@ public class lift : MonoBehaviour
     public void OnAnimationStartEvelevator()
     {
 
-        print("OnAnimationStartEvelevator");
+        //print("OnAnimationStartEvelevator");
 
         if (topToBottomState == false)
         {
@@ -65,7 +65,7 @@ public class lift : MonoBehaviour
     public void OnAnimationEndEvelevator()
     {
 
-        print("OnAnimationEndEvelevator");
+        //print("OnAnimationEndEvelevator");
 
         if (topToBottomState == true)
         {
