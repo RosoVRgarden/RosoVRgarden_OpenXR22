@@ -14,11 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LayerNames:
   - Default
-  - TransparentFX
-  - Ignore Raycast
-  - rayvr
-  - Water
-  - UI
   - 
   - 
   - 
@@ -44,4 +39,9 @@ MonoBehaviour:
   - 
   - 
   - 
-  - Teleport
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
