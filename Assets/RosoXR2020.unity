@@ -348,6 +348,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &63988596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63988587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c98e675d8b22193418bf68853ff7bee4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftHandModel: {fileID: 1114526640}
+  rightHandModel: {fileID: 899914058}
 --- !u!1 &77186849
 GameObject:
   m_ObjectHideFlags: 0
@@ -1412,7 +1426,7 @@ GameObject:
   - component: {fileID: 347097716}
   m_Layer: 0
   m_Name: RightHand Controller
-  m_TagString: Untagged
+  m_TagString: Right Hand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1555,7 +1569,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.1
+  m_Radius: 0.05
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &347097720
 MonoBehaviour:
@@ -1813,7 +1827,7 @@ GameObject:
   - component: {fileID: 409980064}
   m_Layer: 0
   m_Name: LeftHand Controller
-  m_TagString: Untagged
+  m_TagString: Left Hand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2211,6 +2225,7 @@ MonoBehaviour:
   m_AutoDeselect: 0
   m_TimeToAutoDeselect: 3
   m_EnableUIInteraction: 1
+  m_BlockUIOnInteractableSelection: 1
   m_AllowAnchorControl: 1
   m_UseForceGrab: 1
   m_RotateSpeed: 180
@@ -3822,6 +3837,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Left Hand Model
       objectReference: {fileID: 0}
+    - target: {fileID: 109434732395284509, guid: 65847589f926b734d9eaed6e25f0046b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 109434732395284509, guid: 65847589f926b734d9eaed6e25f0046b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 109434732395451517, guid: 65847589f926b734d9eaed6e25f0046b,
         type: 3}
       propertyPath: m_RootOrder
@@ -4705,6 +4730,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Right Hand Model
       objectReference: {fileID: 0}
+    - target: {fileID: 5686134208185362930, guid: 1fd3a7c43c8190f4d8c167ebde694364,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5041,6 +5071,7 @@ GameObject:
   - component: {fileID: 1648599616}
   - component: {fileID: 1648599622}
   - component: {fileID: 1648599620}
+  - component: {fileID: 1648599623}
   m_Layer: 6
   m_Name: Sonic Cylinder
   m_TagString: Untagged
@@ -5158,7 +5189,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 2.14
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -5193,7 +5224,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -5436,6 +5467,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1648599623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648599615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c98e675d8b22193418bf68853ff7bee4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftHandModel: {fileID: 1114526640}
+  rightHandModel: {fileID: 899914058}
 --- !u!4 &1694891489 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5686134208185136552, guid: 1fd3a7c43c8190f4d8c167ebde694364,
@@ -5769,6 +5814,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1710477197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710477186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c98e675d8b22193418bf68853ff7bee4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftHandModel: {fileID: 1114526640}
+  rightHandModel: {fileID: 899914058}
 --- !u!1 &1762951452
 GameObject:
   m_ObjectHideFlags: 0
@@ -5889,6 +5948,7 @@ GameObject:
   - component: {fileID: 1780540674}
   - component: {fileID: 1780540679}
   - component: {fileID: 1780540681}
+  - component: {fileID: 1780540682}
   m_Layer: 6
   m_Name: Sonic Sphere Hover
   m_TagString: Untagged
@@ -6207,7 +6267,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 3
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -6242,7 +6302,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -6282,6 +6342,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1780540682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780540673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c98e675d8b22193418bf68853ff7bee4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftHandModel: {fileID: 1114526640}
+  rightHandModel: {fileID: 899914058}
 --- !u!1 &1865793779
 GameObject:
   m_ObjectHideFlags: 0
@@ -6474,6 +6548,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 63988590}
+    - targetCorrespondingSourceObject: {fileID: 6199973836754003501, guid: d676ea4becfb05c4986528869d595625,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 63988596}
     - targetCorrespondingSourceObject: {fileID: 6199973837699453559, guid: d676ea4becfb05c4986528869d595625,
         type: 3}
       insertIndex: -1
@@ -6486,6 +6564,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1710477188}
+    - targetCorrespondingSourceObject: {fileID: 6199973837699453559, guid: d676ea4becfb05c4986528869d595625,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1710477197}
   m_SourcePrefab: {fileID: 100100000, guid: d676ea4becfb05c4986528869d595625, type: 3}
 --- !u!4 &1985071287 stripped
 Transform:
@@ -6668,6 +6750,7 @@ GameObject:
   - component: {fileID: 3816273839474814824}
   - component: {fileID: 3816273839474814822}
   - component: {fileID: 3816273839474814823}
+  - component: {fileID: 6945257333912659102}
   m_Layer: 6
   m_Name: Door
   m_TagString: Untagged
@@ -7053,6 +7136,20 @@ Transform:
   - {fileID: 8582785427353653553}
   m_Father: {fileID: 4790187990821389427}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6945257333912659102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3816273839474814821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c98e675d8b22193418bf68853ff7bee4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftHandModel: {fileID: 1114526640}
+  rightHandModel: {fileID: 899914058}
 --- !u!33 &7861787338725930664
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -7123,6 +7220,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 922774574}
+  - {fileID: 1516415706}
   - {fileID: 799814267}
   - {fileID: 2102345875}
   - {fileID: 1560920348}
@@ -7131,5 +7229,4 @@ SceneRoots:
   - {fileID: 1631136668}
   - {fileID: 344694901}
   - {fileID: 301170084}
-  - {fileID: 1516415706}
   - {fileID: 1697907418}
