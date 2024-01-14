@@ -25,7 +25,7 @@ public class Player : MonoBehaviour
         { 
             if (hit.distance < rayDistance) 
             { 
-                print("something is detected");
+                //print("something is detected");
                 //print(hit.collider.gameObject.tag);
 
                 if (hit.collider.gameObject.tag == "door") 
