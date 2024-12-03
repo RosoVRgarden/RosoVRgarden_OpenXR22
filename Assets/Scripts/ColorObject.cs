@@ -12,6 +12,7 @@ public class ColorObject : MonoBehaviour
     void Awake()
     {
         meshRenderer = GetComponent<MeshRenderer>();
+		//
     }
 
     // Update is called once per frame
